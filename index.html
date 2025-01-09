@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Super-Booster Travel Buddy - Your Ultimate Travel Companion</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Oswald:wght@300;400;700&family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+    <style>
+        :root {
+            --primary-bg: #F4F1ED;
+            --primary-text: #3A3A3A;
+            --accent-color: #8B4513;
+            --secondary-bg: #E6DFD6;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #4A0404, #8B4513);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--primary-text);
+            line-height: 1.6;
+        }
+        .headline {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-color);
+        }
+        .subheadline {
+            font-family: 'Oswald', sans-serif;
+        }
+        .elegant-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(141, 69, 19, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .elegant-card:hover {
+            transform: translateY(-5px);
+        }
+        .elegant-btn {
+            background: linear-gradient(135deg, #8B4513, #5D3A1A);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .elegant-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(139, 69, 19, 0.2);
+        }
+        .section-divider {
+            background: linear-gradient(135deg, var(--secondary-bg), var(--primary-bg));
+        }
+        .icon-accent {
+            color: var(--accent-color);
+        }
+        .faq-answer {
+            display: none;
+        }
+        .faq-answer.active {
+            display: block;
+        }
+        .chevron-icon {
+            transition: transform 0.3s ease;
+        }
+        .chevron-icon.rotated {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <header class="py-6 px-4 flex justify-between items-center">
+        <div class="text-2xl font-bold headline">The Super-Booster Travel Buddy</div>
+        <nav class="space-x-4">
+            <a href="#products" class="text-primary-text hover:text-accent-color transition">Products</a>
+            <a href="#advantages" class="text-primary-text hover:text-accent-color transition">Advantages</a>
+            <a href="#faq" class="text-primary-text hover:text-accent-color transition">FAQ</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 text-center section-divider">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-5xl font-bold headline gradient-text mb-4">Travel at Your Peak Performance</h1>
+            <p class="text-xl subheadline text-gray-700 mb-4">
+                The first dual-action supplement system designed specifically for travelers.
+                <br>Boost your energy, immunity, and recovery - wherever your journey takes you.
+            </p>
+            <p class="text-2xl mb-8 headline gradient-text" style="font-weight: 700; letter-spacing: 0.5px;">
+                Two Powerful Doses. One Unstoppable You.
+            </p>
+            <button class="elegant-btn px-8 py-3 rounded-lg">Shop Now</button>
+            
+            <div class="grid md:grid-cols-3 gap-6 mt-12">
+                <div class="elegant-card overflow-hidden">
+                    <img src="/api/placeholder/400/300" alt="Business Traveler" class="w-full h-64 object-cover">
+                </div>
+                <div class="elegant-card overflow-hidden">
+                    <img src="/api/placeholder/400/300" alt="Adventure Traveler" class="w-full h-64 object-cover">
+                </div>
+                <div class="elegant-card overflow-hidden">
+                    <img src="/api/placeholder/400/300" alt="Leisure Traveler" class="w-full h-64 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Blends Section -->
+    <section id="products" class="py-16 section-divider">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl headline gradient-text text-center mb-12">The Perfect Travel Companion</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="elegant-card p-6">
+                    <div class="flex items-center mb-6">
+                        <i data-feather="sun" class="w-10 h-10 mr-4 icon-accent"></i>
+                        <h3 class="text-3xl headline">Morning Vitality Blend</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <i data-feather="zap" class="w-5 h-5 mr-3 icon-accent"></i>
+                            <span><strong>Electrolytes & B12</strong> - Enhanced Energy & Focus</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="shield" class="w-5 h-5 mr-3 icon-accent"></i>
+                            <span><strong>Vitamin C & Zinc</strong> - Immune System Support</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="trending-up" class="w-5 h-5 mr-3 icon-accent"></i>
+                            <span><strong>Protein & Creatine</strong> - Physical Performance</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="activity" class="w-5 h-5 mr-3 icon-accent"></i>
+                            <span><strong>Probiotic & Rhodiola</strong> - Digestive & Adaptogenic Support</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="elegant-card p-6">
+                    <div class="flex items-center mb-6">
+                        <i data-feather="moon" class="w-10 h-10 mr-4 icon-accent"></i>
+                        <h3 class="text-3xl headline">Evening Restoration Blend</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <i data-feather="moon" class="w-5 h-5 mr-3 icon-accent"></i>
+                            <span><strong>CBD & Melatonin</strong> - Natural Sleep Support</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="wind" class="w-5 h-5 mr-3 icon-accent"></i>
+                            <span><strong>Ashwagandha</strong> - Advanced Stress Relief</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="battery-charging" class="w-5 h-5 mr-3 icon-accent"></i>
+                            <span><strong>Magnesium L-Threonate</strong> - Enhanced Recovery</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="cloud-drizzle" class="w-5 h-5 mr-3 icon-accent"></i>
+                            <span><strong>Glycine & L-Theanine</strong> - Deep Relaxation Support</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="advantages" class="py-16 section-divider">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl headline gradient-text text-center mb-12">The Super-Booster Advantage</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="elegant-card p-6 text-center">
+                    <i data-feather="award" class="w-12 h-12 mx-auto mb-4 icon-accent"></i>
+                    <h3 class="text-2xl headline mb-4">Scientifically Formulated</h3>
+                    <p>Precision-crafted supplements based on cutting-edge nutritional research.</p>
+                </div>
+                <div class="elegant-card p-6 text-center">
+                    <i data-feather="globe" class="w-12 h-12 mx-auto mb-4 icon-accent"></i>
+                    <h3 class="text-2xl headline mb-4">Travel-Optimized</h3>
+                    <p>Designed to support your body during travel stress and adventure.</p>
+                </div>
+                <div class="elegant-card p-6 text-center">
+                    <i data-feather="activity" class="w-12 h-12 mx-auto mb-4 icon-accent"></i>
+                    <h3 class="text-2xl headline mb-4">Holistic Wellness</h3>
+                    <p>Comprehensive nutrition supporting energy, recovery, and mental clarity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 section-divider">
+        <div class="max-w-2xl mx-auto px-4">
+            <h2 class="text-4xl headline gradient-text text-center mb-12">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="elegant-card">
+                    <div class="p-6 flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
+                        <div class="flex items-center">
+                            <i data-feather="clock" class="mr-4 icon-accent"></i>
+                            <h3 class="text-xl">When should I start taking these supplements before my trip?</h3>
+                        </div>
+                        <i data-feather="chevron-down" class="transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-6 pb-6">
+                        <p>For optimal results, start taking Super-Booster Travel Buddy 5-7 days before your journey. This allows your body to build up the beneficial compounds and adapt to time zone changes more effectively. Continue throughout your trip and 2-3 days after returning for complete travel recovery support.</p>
+                    </div>
+                </div>
+                
+                <div class="elegant-card">
+                    <div class="p-6 flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
+                        <div class="flex items-center">
+                            <i data-feather="shield" class="mr-4 icon-accent"></i>
+                            <h3 class="text-xl">Are these supplements TSA-approved for carry-on luggage?</h3>
+                        </div>
+                        <i data-feather="chevron-down" class="transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-6 pb-6">
+                        <p>Yes! Our travel packets are TSA-compliant and designed specifically for carry-on luggage. Each supplement comes in clearly labeled, sealed packets that meet all aviation security requirements. We recommend keeping them in their original packaging with your personal items for easy security screening.</p>
+                    </div>
+                </div>
+
+                <div class="elegant-card">
+                    <div class="p-6 flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
+                        <div class="flex items-center">
+                            <i data-feather="battery-charging" class="mr-4 icon-accent"></i>
+                            <h3 class="text-xl">How quickly do the supplements take effect?</h3>
+                        </div>
+                        <i data-feather="chevron-down" class="transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-6 pb-6">
+                        <p>The Morning Vitality Blend typically shows effects within 30-45 minutes, providing energy and focus for your day. The Evening Restoration Blend begins working within 20-30 minutes, helping you relax and adjust to new time zones. Full adaptogenic benefits are experienced after 3-5 days of consistent use.</p>
+                    </div>
+                </div>
+
+                <div class="elegant-card">
+                    <div class="p-6 flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
+                        <div class="flex items-center">
+                            <i data-feather="thermometer" class="mr-4 icon-accent"></i>
+                            <h3 class="text-xl">How should I store these supplements while traveling?</h3>
+                        </div>
+                        <i data-feather="chevron-down" class="transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-6 pb-6">
+                        <p>Our supplements are specially packaged to maintain potency in various travel conditions. Keep them at room temperature (below 77°F/25°C), away from direct sunlight and moisture. The individual packets are temperature-stable and designed to withstand typical cabin pressure changes during flights.</p>
+                    </div>
+                </div>
+
+                <div class="elegant-card">
+                    <div class="p-6 flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
+                        <div class="flex items-center">
+                            <i data-feather="package" class="mr-4 icon-accent"></i>
+                            <h3 class="text-xl">How are the travel packs packaged?</h3>
+                        </div>
+                        <i data-feather="chevron-down" class="transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-6 pb-6">
+                        <p>Each travel kit includes individually sealed, clearly labeled morning and evening packets. The packets are waterproof, tear-resistant, and sized for easy packing. A standard 7-day travel pack contains 7 morning and 7 evening doses, with options for longer trips available.</p>
+                    </div>
+                </div>
+
+                <div class="elegant-card">
+                    <div class="p-6 flex justify-between items-center cursor-pointer" onclick="toggleFAQ(this)">
+                        <div class="flex items-center">
+                            <i data-feather="truck" class="mr-4 icon-accent"></i>
+                            <h3 class="text-xl">What's your shipping policy for travel deadlines?</h3>
+                        </div>
+                        <i data-feather="chevron-down" class="transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-6 pb-6">
+                        <p>We offer expedited 2-day and overnight shipping options to ensure you receive your supplements before your trip. Orders placed before 2 PM EST are shipped same-day. For international destinations, we provide DHL Express shipping with delivery typically within 3-5 business days.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 section-divider">
+        <div class="max-w-xl mx-auto text-center">
+            <h2 class="text-4xl headline gradient-text mb-6">Stay Boosted, Stay Informed</h2>
+            <p class="mb-8 text-xl">Subscribe to our newsletter for travel wellness tips and exclusive offers!</p>
+            <form class="flex max-w-md mx-auto">
+                <input type="email" placeholder="Enter your email" class="flex-grow p-3 rounded-l-lg border border-gray-300">
+                <button type="submit" class="elegant-btn px-6 py-3 rounded-r-lg">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center bg-gray-100">
+        <p>&copy; 2025 The Super-Booster Travel Buddy. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+
+        // FAQ Toggle functionality
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('[data-feather]');
+            
+            // Toggle answer visibility
+            answer.classList.toggle('active');
+            
+            // Update icon
+            if (answer.classList.contains('active')) {
+                feather.replace(icon, { icon: 'chevron-up' });
+            } else {
+                feather.replace(icon, { icon: 'chevron-down' });
+            }
+        }
+    </script>
+</body>
+</html>
